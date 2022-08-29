@@ -4,7 +4,7 @@ import useAuth from '../hooks/useAuth'
 import Alerta from '../components/Alerta'
 import clienteAxios from '../config/axios'
 
-const login = () => {
+const Login = () => {
     const [alerta,setAlerta ]=useState({})
     const [email , setEmail]=useState('')
     const [password , setPassword]=useState('')
