@@ -2,7 +2,7 @@ import{BrowserRouter,Routes,Route} from 'react-router-dom'
 import AuthLayout from './layout/AuthLayout'
 import RutaProtregida from './layout/RutaProtregida'
 
-import Login from './paginas/login'
+import Login from './paginas/Login'
 import Registrar from './paginas/Registrar'
 import OlvidePassword from './paginas/OlvidePassword'
 import ConfirmarCuenta from './paginas/ConfirmarCuenta'
