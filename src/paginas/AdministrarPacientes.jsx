@@ -1,6 +1,7 @@
 import{useState} from 'react'
 import Formulario from '../components/Formulario'
 import ListadoPacientes from '../components/ListadoPacientes'
+import imagen from '../assets/imagenes'
 
 const AdministrarPacientes = () => {
   const [mostrarFormulario, setMostrarFormulario]=useState(false)
@@ -13,7 +14,7 @@ const AdministrarPacientes = () => {
             <div className={`${mostrarFormulario ? 'block':'hidden' } md:block md:w-1/2 lg:w-2/5`}>
               <Formulario/>
             </div>
-            <img className='h-32 mt-6 md:mt-0' src="../src/assets/img/gato.gif" width="200" alt="imagen-gato"/>
+            <img className='h-32 mt-6 md:mt-0' src={imagen.img2} width="200" alt="imagen-gato"/>
             <div className='md:w-1/2 lg:w-3/5'>
               <ListadoPacientes/>
             </div>

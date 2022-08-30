@@ -2,6 +2,7 @@ import{useState} from 'react'
 import {Link} from 'react-router-dom'
 import clienteAxios from '../config/axios'
 import Alerta from '../components/Alerta'
+import imagen from '../assets/imagenes'
 
 const Registrar = () => {
   const [nombre,setNombre] = useState('')
@@ -44,7 +45,7 @@ const Registrar = () => {
     <>
         <div>
              <h1 className="text-sky-400 font-black md:text-6xl">Crea tu Cuenta y Administra tus <span className="text-black text-6xl">Pacientes</span> </h1>
-             <img src="../src/assets/img/gato.jpg" alt="gato-img"/>
+             <img src={imagen.img3} alt="gato-img"/>
         </div>
         <div className='mt-20 md:mt-5 shadow-lg px-5 py-10 rounded-xl'>
               {msg && <Alerta 

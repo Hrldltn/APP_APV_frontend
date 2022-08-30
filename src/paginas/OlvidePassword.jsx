@@ -2,6 +2,8 @@ import{useState} from 'react'
 import{Link} from 'react-router-dom';
 import Alerta from '../components/Alerta'
 import clienteAxios from '../config/axios';
+import imagen from '../assets/imagenes'
+
 const OlvidePassword = () => {
       const [email,setEmail]=useState('')
       const [alerta , setAlerta]=useState({})
@@ -25,7 +27,7 @@ const OlvidePassword = () => {
     <>
         <div>
              <h1 className="text-sky-400 font-black md:text-6xl">Recupera Tu Acceso y no Pierdad tus <span className="text-black text-6xl">Pacientes</span> </h1>
-             <img src="../src/assets/img/perros.png" alt="perros-img"/>
+             <img src={imagen.img1} alt="perros-img"/>
         </div>
          <div className='mt-20 md:mt-5 shadow-lg px-5 py-10 rounded-xl'>
                 {msg && <Alerta alerta={alerta}/>}

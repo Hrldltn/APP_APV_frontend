@@ -1,8 +1,8 @@
-
 import{useEffect,useState} from 'react'
 import {useParams,Link} from 'react-router-dom'
 import clienteAxios from '../config/axios'
 import Alerta from '../components/Alerta'
+import imagen from '../assets/imagenes'
 
 const ConfirmarCuenta = () => {
   const [cuentaConfirmada,setCuentaConfirmada]=useState(false)
@@ -32,7 +32,7 @@ const ConfirmarCuenta = () => {
     <>
         <div>
              <h1 className="text-sky-400 font-black md:text-6xl">Confirma tu cuenta y Comienza a Administra tus <span className="text-black text-6xl">Pacientes</span> </h1>
-             <img src="../src/assets/img/gato.jpg" alt="gato-img"/>
+             <img src={imagen.img3} alt="gato-img"/>
         </div>
         <div className='mt-20 md:mt-5 shadow-lg px-5 py-10 rounded-xl'>
             {!cargando && <Alerta alerta={alerta} />}
