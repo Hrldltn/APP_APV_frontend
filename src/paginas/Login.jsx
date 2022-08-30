@@ -35,10 +35,10 @@ const Login = () => {
     <>
         <div>
              <h1 className="text-sky-400 font-black text-4xl md:text-6xl">inicia Sesión y Administra tus <span className="text-black text-4xl md:text-6xl">Pacientes</span> </h1>
-             <img className="hidden md:block"src="../src/assets/img/perros.png" alt="perros-img"/>
+             <img className="hidden md:block" src="../assets/img/perros.png" alt="perros-img"/>
         </div>
         <div className='mt-20 md:mt-5 shadow-lg px-5 py-10 rounded-xl'>
-            <img src="../src/assets/img/gato.jpg" alt="gato-img"/>
+            <img src="../assets/img/gato.jpg" alt="gato-img"/>
 
               {msg && 
                 <Alerta alerta={alerta}/>}
@@ -70,4 +70,7 @@ const Login = () => {
   )
 }
 
+
+
 export default Login
+
